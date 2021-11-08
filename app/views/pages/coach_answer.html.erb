@@ -1,0 +1,11 @@
+<% if @question.downcase == 'i am going to work' %>
+<p>"Great!"</p>
+<% elsif @question.include? '?' %>
+<p>Silly question, get dressed and go to work!</p>
+<% else%>
+<p>I don't care, get dressed and go to work!</p>
+<% end %>
+
+<div>
+<%= link_to 'ask', ask_path %>
+</div>
